@@ -51,6 +51,11 @@
 	  orientation = "left";
 	  tilesize = 32;
 	};
+	finder = {
+	  AppleShowAllExtensions = true;
+	  ShowPathbar = true;
+	  ShowStatusBar = true;
+	};
       };
       # Necessary for using flakes on this system.
       nix.settings.experimental-features = "nix-command flakes";
