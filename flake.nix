@@ -36,6 +36,10 @@
             pkgs.nixpkgs-fmt
           ];
 
+        fonts.packages = [
+          pkgs.fira-code
+        ];
+
         homebrew = {
           enable = true;
           casks = [
