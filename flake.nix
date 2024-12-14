@@ -35,6 +35,12 @@
             pkgs.vscode
             pkgs.nixpkgs-fmt
             pkgs.mkalias
+            pkgs.jetbrains.clion
+            pkgs.jetbrains.idea-ultimate
+            pkgs.python313
+            pkgs.ghc
+            pkgs.stack
+            pkgs.go
           ];
 
         fonts.packages = [
