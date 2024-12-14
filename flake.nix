@@ -41,6 +41,7 @@
             pkgs.ghc
             pkgs.stack
             pkgs.go
+            pkgs.firefox
           ];
 
         fonts.packages = [
