@@ -41,7 +41,7 @@
             pkgs.ghc
             pkgs.stack
             pkgs.go
-            pkgs.firefox
+            pkgs.firefox-unwrapped
           ];
 
         fonts.packages = [
