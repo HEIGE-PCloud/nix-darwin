@@ -44,6 +44,7 @@
           enable = true;
           casks = [
             "stats"
+            "eloston-chromium"
           ];
           masApps = {
             "AdGuard for Safari" = 1440147259;
@@ -63,6 +64,9 @@
             AppleShowAllExtensions = true;
             ShowPathbar = true;
             ShowStatusBar = true;
+          };
+          WindowManager = {
+            EnableTiledWindowMargins = false;
           };
         };
         # Necessary for using flakes on this system.
