@@ -41,7 +41,6 @@
             pkgs.ghc
             pkgs.stack
             pkgs.go
-            pkgs.firefox-unwrapped
           ];
 
         fonts.packages = [
@@ -54,6 +53,7 @@
             "stats"
             "eloston-chromium"
             "betterdisplay"
+            "firefox"
           ];
           masApps = {
             "AdGuard for Safari" = 1440147259;
