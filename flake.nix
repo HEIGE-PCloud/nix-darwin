@@ -53,6 +53,7 @@
           casks = [
             "stats"
             "eloston-chromium"
+            "betterdisplay"
           ];
           masApps = {
             "AdGuard for Safari" = 1440147259;
