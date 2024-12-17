@@ -33,6 +33,7 @@
     };
     ssh = {
       enable = true;
+      addKeysToAgent = "yes";
       matchBlocks = {
         "shell1" = {
           hostname = "shell1.doc.ic.ac.uk";
@@ -57,6 +58,10 @@
         "shell5" = {
           hostname = "shell5.doc.ic.ac.uk";
           user = "jc4922";
+        };
+
+        "github.com" = {
+          identityFile = "~/.ssh/github";
         };
       };
     };
