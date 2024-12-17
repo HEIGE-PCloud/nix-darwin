@@ -141,7 +141,7 @@
               useGlobalPkgs = true;
               useUserPackages = true;
               users.jchen = import ./home.nix;
-            }
+            };
           }
         ];
       };
