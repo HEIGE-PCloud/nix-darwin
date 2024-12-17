@@ -18,9 +18,11 @@
       url = "github:homebrew/homebrew-bundle";
       flake = false;
     };
+    home-manager.url = "github:nix-community/home-manager";
+    home-manager.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew, homebrew-core, homebrew-cask, homebrew-bundle, ... }:
+  outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew, homebrew-core, homebrew-cask, homebrew-bundle, home-manager, ... }:
     let
       configuration = { pkgs, config, ... }: {
         # List packages installed in system profile. To search by name, run:
@@ -76,13 +78,14 @@
           };
         };
 
-        system.activationScripts.applications.text = let
-          env = pkgs.buildEnv {
-            name = "system-applications";
-            paths = config.environment.systemPackages;
-            pathsToLink = "/Applications";
-          };
-        in
+        system.activationScripts.applications.text =
+          let
+            env = pkgs.buildEnv {
+              name = "system-applications";
+              paths = config.environment.systemPackages;
+              pathsToLink = "/Applications";
+            };
+          in
           pkgs.lib.mkForce ''
             echo "setting up /Applications..." >&2
             rm -rf /Applications/Nix\ Apps
@@ -130,6 +133,12 @@
               };
               mutableTaps = false;
             };
+          }
+          home-manager.darwinModules.home-manager
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.users.jchen = import ./home.nix;
           }
         ];
       };
