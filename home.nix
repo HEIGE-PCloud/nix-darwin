@@ -25,9 +25,16 @@
       enable = true;
       userName = "PCloud";
       userEmail = "heige.pcloud@outlook.com";
+      signing = {
+        key = "/Users/jchen/.ssh/github.pub";
+        signByDefault = true;
+      };
       extraConfig = {
         core = {
           editor = "code --wait";
+        };
+        gpg = {
+          format = "ssh";
         };
       };
     };
