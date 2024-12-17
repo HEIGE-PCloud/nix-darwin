@@ -31,5 +31,34 @@
         };
       };
     };
+    ssh = {
+      enable = true;
+      matchBlocks = {
+        "shell1" = {
+          hostname = "shell1.doc.ic.ac.uk";
+          user = "jc4922";
+        };
+
+        "shell2" = {
+          hostname = "shell2.doc.ic.ac.uk";
+          user = "jc4922";
+        };
+
+        "shell3" = {
+          hostname = "shell3.doc.ic.ac.uk";
+          user = "jc4922";
+        };
+
+        "shell4" = {
+          hostname = "shell4.doc.ic.ac.uk";
+          user = "jc4922";
+        };
+
+        "shell5" = {
+          hostname = "shell5.doc.ic.ac.uk";
+          user = "jc4922";
+        };
+      };
+    };
   };
 }
