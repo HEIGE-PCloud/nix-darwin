@@ -60,5 +60,11 @@
         };
       };
     };
+    zsh = {
+      enable = true;
+      initExtra = ''
+        PROMPT='%~ '
+      '';
+    };
   };
 }
