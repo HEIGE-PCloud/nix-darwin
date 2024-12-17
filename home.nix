@@ -4,7 +4,7 @@
   # Home Manager needs a bit of information about you and the
   # paths it should manage.
   home.username = "jchen";
-  home.homeDirectory = "/Users/jchen";
+  home.homeDirectory = /Users/jchen;
 
   # This value determines the Home Manager release that your
   # configuration is compatible with. This helps avoid breakage
