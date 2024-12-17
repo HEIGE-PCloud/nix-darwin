@@ -136,9 +136,12 @@
           }
           home-manager.darwinModules.home-manager
           {
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-            home-manager.users.jchen = import ./home.nix;
+            users.users.jchen.home = "/Users/jchen";
+            home-manager = {
+              useGlobalPkgs = true;
+              useUserPackages = true;
+              users.jchen = import ./home.nix;
+            }
           }
         ];
       };
