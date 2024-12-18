@@ -43,6 +43,7 @@
             pkgs.ghc
             pkgs.stack
             pkgs.go
+            pkgs.iterm2
           ];
 
         fonts.packages = [
