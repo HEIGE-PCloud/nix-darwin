@@ -52,9 +52,6 @@
 
         homebrew = {
           enable = true;
-          onActivation = {
-            cleanup = "zap";
-          };
           casks = [
             "stats"
             "eloston-chromium"
