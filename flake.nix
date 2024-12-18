@@ -85,6 +85,11 @@
             WindowManager = {
               EnableTiledWindowMargins = false;
             };
+            NSGlobalDomain = {
+              ApplePressAndHoldEnabled = true;
+              InitialKeyRepeat = 15; # normal minimum is 15 (225 ms), maximum is 120 (1800 ms)
+              KeyRepeat = 3; # normal minimum is 2 (30 ms), maximum is 120 (1800 ms)
+            };
           };
 
           stateVersion = 5;
