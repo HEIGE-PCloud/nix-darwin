@@ -63,6 +63,11 @@
           };
         };
 
+        system.keyboard = {
+          enableKeyMapping = true;
+          remapCapsLockToEscape = true;
+        };
+
         system.defaults = {
           dock = {
             autohide = true;
