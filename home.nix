@@ -42,6 +42,9 @@
         gpg = {
           format = "ssh";
         };
+        init.defaultBranch = "main";
+        push.autoSetupRemote = true;
+        pull.rebase = true;
       };
     };
     ssh = {
