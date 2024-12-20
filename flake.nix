@@ -44,6 +44,8 @@
             pkgs.stack
             pkgs.go
             pkgs.iterm2
+            pkgs.nodejs_23
+            pkgs.hugo
           ];
 
         fonts.packages = [
