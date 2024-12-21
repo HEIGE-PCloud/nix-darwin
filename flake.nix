@@ -40,8 +40,6 @@
             pkgs.jetbrains.clion
             pkgs.jetbrains.idea-ultimate
             pkgs.python313
-            pkgs.ghc
-            pkgs.stack
             pkgs.go
             pkgs.iterm2
             pkgs.nodejs_23
