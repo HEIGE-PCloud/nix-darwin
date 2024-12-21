@@ -59,6 +59,7 @@
             "eloston-chromium"
             "betterdisplay"
             "firefox"
+            "orbstack"
           ];
           masApps = {
             "AdGuard for Safari" = 1440147259;
