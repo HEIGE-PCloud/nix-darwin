@@ -65,6 +65,7 @@
             "AdGuard for Safari" = 1440147259;
             "Final Cut Pro" = 424389933;
             "WhatsApp" = 310633997;
+            "Telegram" = 747648890;
           };
         };
 
