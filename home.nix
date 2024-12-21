@@ -86,6 +86,7 @@
       initExtra = ''
         PROMPT='%~ '
         source /Users/jchen/.iterm2_shell_integration.zsh
+        . /Users/jchen/.ghcup/env
       '';
     };
   };
