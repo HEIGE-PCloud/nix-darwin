@@ -45,6 +45,7 @@
             pkgs.nodejs_23
             pkgs.hugo
             pkgs.coreutils
+            pkgs.cloc
           ];
 
         fonts.packages = [
