@@ -44,6 +44,7 @@
             pkgs.iterm2
             pkgs.nodejs_23
             pkgs.hugo
+            pkgs.coreutils
           ];
 
         fonts.packages = [
