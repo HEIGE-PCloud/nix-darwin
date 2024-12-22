@@ -46,6 +46,7 @@
             pkgs.hugo
             pkgs.coreutils
             pkgs.cloc
+            pkgs.obsidian
           ];
 
         fonts.packages = [
