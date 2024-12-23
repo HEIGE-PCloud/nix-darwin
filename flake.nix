@@ -62,6 +62,7 @@
             "firefox"
             "orbstack"
             "steam"
+            "sony-ps-remote-play"
           ];
           masApps = {
             "AdGuard for Safari" = 1440147259;
